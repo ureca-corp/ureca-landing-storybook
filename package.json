@@ -11,6 +11,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@emotion/babel-preset-css-prop": "^11.10.0",
     "@types/node": "18.15.12",
     "@types/react": "18.0.37",
     "@types/react-dom": "18.0.11",
@@ -29,6 +30,7 @@
     "@storybook/addon-essentials": "7.0.6",
     "@storybook/addon-interactions": "7.0.6",
     "@storybook/addon-links": "7.0.6",
+    "@storybook/addon-styling": "^1.0.1",
     "@storybook/blocks": "7.0.6",
     "@storybook/nextjs": "7.0.6",
     "@storybook/react": "7.0.6",
