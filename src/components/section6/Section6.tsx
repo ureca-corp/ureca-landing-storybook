@@ -5,8 +5,13 @@ import { Slide } from "./components/Slide";
 export const Section6 = () => {
   return (
     <div css={st.root}>
-      <Stack direction="row" css={st.inner} justifyContent="space-between">
-        <Stack gap="40px">
+      <Stack
+        direction="row"
+        css={st.inner}
+        justifyContent="space-between"
+        alignItems={"center"}
+      >
+        <Stack gap="40px" sx={{ width: "40%" }}>
           <Typography color="#242424" fontSize="48px" fontWeight="700">
             {"실력있는 최고의\n에듀랜드 교수님들"}
           </Typography>

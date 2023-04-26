@@ -1,7 +1,7 @@
 import { Stack, Typography } from "@mui/material";
 import { css } from "@emotion/react";
 import Image from "next/image";
-import img from "@/assets/section1.png";
+import Triangle from "@/assets/section-1.png";
 import { Section1Models } from "./models/Section1Models";
 import { Mq, useCustomMediaQuery } from "@/common/theme/screen";
 
@@ -16,13 +16,13 @@ export const Section1 = () => {
               "미술 수집의 미래에 앞장서는 BISKET 에서\n세계 최고의 예술품을 거래해보세요."
             }
           </Typography>
-          <Typography color="#6E6E6E" fontSize="20px" mt="40px" mb="100px">
+          <Typography color="#493232" fontSize="20px" mt="40px" mb="100px">
             {
               "BISKET은 NFT 기술을 통해 아티스트들의 소유권과 저작권을 보호합니다.\n이는 아티스트들이 지속가능한 작업환경을 구축하는 토대가 됩니다.\n아트 플랫폼으로 시작한 BISKET의 목적지는 ‘예술의 대중화’입니다."
             }
           </Typography>
           <div css={st.image}>
-            <Image src={img} alt="img" fill sizes="100" />
+            <Image src={Triangle} alt="img" fill sizes="100" />
           </div>
         </Stack>
         <ul css={st.right}>
@@ -63,11 +63,7 @@ const st = {
     width: 1400px;
     margin: 0 auto;
     @media ${Mq.xxl} {
-      direction: column;
-      width: 100%;
-    }
-    @media (max-width: 1440px) {
-      direction: column;
+      flex-direction: column;
       width: 100%;
     }
   `,
